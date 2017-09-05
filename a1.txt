@@ -1,0 +1,7 @@
+Using a pen, draw a square in the center of the paper.
+Locate the middle of the square’s top line and draw a small circle slightly above the line.
+Draw a vertical line to connect the circle to the top of the square.
+Draw two equally spaced vertical lines from the square’s bottom line.
+Draw a short horizontal line connected to the middle of the square’s left side line.
+Repeat on the right side of the square.
+Draw two dots and a curved line to form a smiley face inside the square.
