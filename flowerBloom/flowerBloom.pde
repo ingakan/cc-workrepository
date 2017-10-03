@@ -10,9 +10,9 @@ PImage b3;
 PImage b4;
 PImage bee;
 
-int spacing = 40;
+int spacing = 50;
 int numberDrawn = 0;
-int totalLines = 600;
+int totalLines = 500;
 
 void setup() {
   size(700, 700);
@@ -45,7 +45,7 @@ void draw() {
   }
   if (numberDrawn < totalLines) {
      background(221 - spacing/4, 248 - spacing/4, 255 - spacing/4);
-     //make background white if mouse is pressed
+     //make background orangy yellow if mouse is pressed
    if (mousePressed){
      background(255 - spacing/4, 250 - spacing/4, 221 - spacing/4);
    }
@@ -120,6 +120,32 @@ void draw() {
                    image(b3, 940 - spacing+5, 540);
       
       
+    stroke(154, 191, 114);
+    strokeWeight(2);
+    line(450, 600, 450, 700);
+    image(flower, 450, 600);
+    
+    stroke(154, 191, 114);
+    strokeWeight(2);
+    line(400, 570, 400, 700);
+    image(flower, 400, 570);
+    image(flower, 400, 570);
+    
+    stroke(154, 191, 114);
+    strokeWeight(2);
+    line(640, 450, 640, 700);
+    image(flower, 640, 450);
+    
+    stroke(154, 191, 114);
+    strokeWeight(2);
+    line(600, 510, 600, 700);
+    image(flower, 600, 510);
+    
+    stroke(154, 191, 114);
+    strokeWeight(2);
+    line(450, 600, 450, 700);
+    image(flower, 450, 600);
+    
       
     spacing += random(1, 4);
     println("Spacing: " + spacing);
@@ -141,8 +167,8 @@ void draw() {
   strokeWeight(2);
   // define number of times draw() exececutes per sec
   frameRate(30);
-  // maximum angle 20 to restrict transformation scope
-  float bloom = (mouseX / (float) width) * 20f;
+  // maximum angle 30 to restrict transformation scope
+  float bloom = (mouseX / (float) width) * 30f;
   // convert angle degrees to radians
   theta = radians(bloom);
   // use translate() to float (LEFT/RIGHT, UP/DOWN)
@@ -202,7 +228,7 @@ void branch(float h) {
                       //tint image (r, g, b, opacity) or (255, opacity) to keep color
                       // tint(120, 80)
         image(flower, 0, 0);
-        flower.resize(20, 20);
+        flower.resize(30, 30);
       }
     stroke(154, 191, 114);
   }
