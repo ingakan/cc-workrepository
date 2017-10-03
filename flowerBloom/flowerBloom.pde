@@ -10,9 +10,10 @@ PImage b3;
 PImage b4;
 PImage bee;
 
+
 int spacing = 50;
 int numberDrawn = 0;
-int totalLines = 500;
+int totalLines = 400;
 
 void setup() {
   size(700, 700);
@@ -27,6 +28,8 @@ void setup() {
   b3 = loadImage("bird3.png");
   b4 = loadImage("bird4.png");
   bee = loadImage("bee.png");
+  
+  
   println("hello");
   println(spacing);
   
@@ -39,11 +42,14 @@ void setup() {
 
 
 void draw() {
+  
   background(221, 248, 255);
+  
   if (mouseX < 50) {
     cursor(bee, 0, 0);
   }
   if (numberDrawn < totalLines) {
+    
      background(221 - spacing/4, 248 - spacing/4, 255 - spacing/4);
      //make background orangy yellow if mouse is pressed
    if (mousePressed){
